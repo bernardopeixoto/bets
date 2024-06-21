@@ -6,4 +6,4 @@ const client = new Client({
   });
 
 client.connect();
-const db = drizzle(client);
+export const db = drizzle(client);
