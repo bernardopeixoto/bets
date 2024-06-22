@@ -1,17 +1,18 @@
-import { defineConfig, Config } from "drizzle-kit";
-import dotenv from "dotenv";
-dotenv.config();
+import { defineConfig } from 'drizzle-kit';
+import { ConfigService } from '@nestjs/config';
+import 'dotenv/config';
+const configService = new ConfigService();
 
 export default defineConfig({
-  dialect: "postgresql",
-  schema: "./src/schemas",
-  out: "./drizzle",
+  schema: './src/schemas/database-schema.ts',
+  out: './drizzle',
+  dialect: 'postgresql',
   dbCredentials: {
-    host: process.env.HOST,
-    port: parseInt(process.env.PORT, 10),
-    user: process.env.USER,
-    password: process.env.PASSWORD,
-    database: process.env.DATABASE,
+    host: configService.get('HOST'),
+    port: configService.get('PORT'),
+    user: configService.get('USER'),
+    password: configService.get('PASSWORD'),
+    database: configService.get('DATABASE'),
+    ssl: false,
   },
-}) satisfies Config;
-
+})

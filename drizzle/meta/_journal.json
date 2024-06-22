@@ -8,6 +8,34 @@
       "when": 1718836145571,
       "tag": "0000_optimal_iron_patriot",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1719066206441,
+      "tag": "0001_old_mister_fear",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1719067240866,
+      "tag": "0002_dashing_black_tarantula",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1719067835919,
+      "tag": "0003_empty_steel_serpent",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1719068069542,
+      "tag": "0004_gifted_greymalkin",
+      "breakpoints": true
     }
   ]
 }
